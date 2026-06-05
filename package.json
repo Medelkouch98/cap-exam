@@ -29,10 +29,10 @@
       },
       "auth": {
         "[production]": {
-          "kind": "none"
+          "kind": "dummy"
         },
         "[development]": {
-          "kind": "none"
+          "kind": "dummy"
         }
       }
     }

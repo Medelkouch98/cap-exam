@@ -4,7 +4,6 @@ using { exam.logistics as my } from '../db/schema.cds';
 service LogisticsService
 {
     @cds.redirection.target
-    @odata.draft.enabled
     entity Shipments as
         projection on my.Shipments;
 

@@ -38,7 +38,7 @@ modules:
       - name: c_cpe_template-db
 
 resources:
-  - name: c_cpe_template-dbdedd
+  - name: c_cpe_template-db
     type: com.sap.xs.hdi-container
     parameters:
       service: hana
