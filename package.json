@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Course Template",
   "dependencies": {
-    "@cap-js/hana": "2.5.1",
+    "@cap-js/hana": "^2",
     "@sap/cds": "9.6.1",
     "@sap/xssec": "4.12.1",
     "express": "4.22.1"
@@ -15,5 +15,26 @@
   "scripts": {
     "start": "cds-serve"
   },
-  "private": true
+  "private": true,
+  "cds": {
+    "requires": {
+      "db": {
+        "[production]": {
+          "kind": "hana-cloud"
+        },
+        "[development]": {
+          "kind": "sqlite",
+          "model": "db"
+        }
+      },
+      "auth": {
+        "[production]": {
+          "kind": "none"
+        },
+        "[development]": {
+          "kind": "none"
+        }
+      }
+    }
+  }
 }
